@@ -16,6 +16,10 @@ class Task1(Node):
         '''
         Prefill a Twist Message Here to publish 
         '''
+        message = Twist()
+        message.linear.x = 1.0
+        # message.angular.z = 1.0
+        self.drive_publisher_.publish(message)
     
 def main(args=None):
     rclpy.init(args=args)
