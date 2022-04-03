@@ -20,7 +20,7 @@ class Task3(Node):
         '''
         self.get_logger().info('distance from object: {}'.format(msg.range))
 
-        if msg.range <= self.distance:
+        if msg.range <= self.stopping_distance:
             message = Twist(linear=Vector3(x=0.0, y=0.0, z=0.0),
                             angular=Vector3(x=0.0, y=0.0, z=0.0))
 
@@ -30,7 +30,7 @@ class Task3(Node):
         '''
         Implement logic to decide what distance the car should be from an object before it stops
         '''
-
+        self.stopping_distance = ((msg.linear.x ** 2) / 20) + 5
 
 def main(args=None):
     rclpy.init(args=args)
