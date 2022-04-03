@@ -17,7 +17,7 @@ class Task1(Node):
         Prefill a Twist Message Here to publish 
         '''
         message = Twist()
-        message.linear.x = 1.0
+        message.linear.x = 10.0
         # message.angular.z = 1.0
         self.drive_publisher_.publish(message)
     
