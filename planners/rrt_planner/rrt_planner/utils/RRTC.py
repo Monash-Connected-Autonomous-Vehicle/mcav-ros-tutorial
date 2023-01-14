@@ -54,8 +54,7 @@ class RRTC:
         self.end_node_list = [self.end]
         while len(self.start_node_list) + len(self.end_node_list) <= self.max_nodes:
         
-            #TODO: Complete the planning method ----------------------------------------------------------------
-            # 1. Sample and add a node in the start tree
+            # sample and add a node in the start tree
             rnd_node = self.get_random_node()
             expansion_ind = self.get_nearest_node_index(self.start_node_list,rnd_node)
             expansion_node = self.start_node_list[expansion_ind] ## closest node in tree to rnd_node
@@ -66,13 +65,13 @@ class RRTC:
             if self.is_collision_free(nearby_node):
                 self.start_node_list.append(nearby_node)
             
-            # 2. Check whether trees can be connected
+            # check whether trees can be connected
             expansion_ind = self.get_nearest_node_index(self.end_node_list, nearby_node) 
             expansion_node = self.end_node_list[expansion_ind]
                 
             d, thet = self.calc_distance_and_angle(expansion_node, nearby_node)
 
-            # 3. Add the node that connects the trees and generate the path
+            # add the node that connects the trees and generate the path
             if d < self.expand_dis:
                 close_node = self.steer(expansion_node,nearby_node,self.expand_dis)
 
@@ -82,7 +81,7 @@ class RRTC:
                     return self.generate_final_course(len(self.start_node_list) - 1, len(self.end_node_list) - 1)
             
             
-            # 4. Sample and add a node in the end tree
+            # sample and add a node in the end tree
             rnd_node = self.get_random_node()
             expansion_ind = self.get_nearest_node_index(self.end_node_list,rnd_node)
             expansion_node = self.end_node_list[expansion_ind] ## closest node in tree to rnd_node
@@ -93,7 +92,7 @@ class RRTC:
             if self.is_collision_free(nearby_node):
                 self.end_node_list.append(nearby_node)
 
-            # 5. Swap start and end trees
+            # swap start and end trees
             temp = self.start_node_list
             self.start_node_list = self.end_node_list
             self.end_node_list = temp
