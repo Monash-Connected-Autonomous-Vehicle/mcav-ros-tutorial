@@ -60,7 +60,6 @@ class Creator(Node):
         
         min_value = min(costs)
         min_index = costs.index(min_value)
-        print(min_index)
         optimum = paths[min_index]
 
         try:
@@ -68,11 +67,6 @@ class Creator(Node):
             return paths[min_index]
         except:
             print("Path could not be planned!")
-
-        min_value = min(costs)
-        min_index = costs.index(min_value)
-
-        return paths[min_index]
     
     # Plot occupancy grid with path
     def visualise_path(self,optimum):
