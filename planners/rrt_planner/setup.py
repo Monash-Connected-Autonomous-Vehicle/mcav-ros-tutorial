@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'path_creator = rrt_planner.path_creator_node:main',
+            'og_manager = rrt_planner.Og_manager:main',
         ],
     },
 )
