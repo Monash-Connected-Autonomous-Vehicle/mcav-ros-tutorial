@@ -4,7 +4,7 @@ from math import ceil
 
 ##  WORK IN PROGRESS ##
 
-# This is an adapted version of the file RRTC where we are passing through our occupancy grid data instead of obstacle coordinates
+# This is a modified version of the file RRTC where we are passing through our occupancy grid data instead of obstacle coordinates
 
 #assumptions:
 #og and map are both sqaures
@@ -37,7 +37,7 @@ class RRTC:
                  expand_dis=3.0, 
                  path_resolution=0.5, 
                  max_points=200,
-                 rob_width = 1.0,
+                 rob_width = 1.0, 
                  rob_height = 1.0):
         """
         Setting Parameter
@@ -47,7 +47,7 @@ class RRTC:
         og_height, og_width, og_resolution, og_data: height, width, resolution and data of the occupancy grid
         expand_dis: min distance between random node and closest node in rrt to it
         path_resolion: step size to considered when looking for node to expand
-        rob_width: the width of our robot
+        rob_width: the width of our robot 
         rob_height: the height of our robot
         
         """
@@ -170,6 +170,9 @@ class RRTC:
         return True  # safe
 
     def new_node_is_free(self,new_node,og_width,og_height,og_resolution,og_data,map_width, map_height):
+        """
+        Determines if a given node lies in the free square on our occupancy grid
+        """
 
         og_index = self.map_to_og_conversion(new_node=new_node,og_width=og_width,og_height=og_height,og_resolution=og_resolution,map_height=map_height,map_width=map_width)
         
@@ -180,6 +183,9 @@ class RRTC:
 
        
     def map_to_og_conversion(self,point,og_width,og_height,og_resolution,map_width, map_height):
+        """
+        Returns the index of the square of the occuapncy grid a given point lies on
+        """
         position = np.array([point.x,point.y])
         ratio = og_width/10 #for now just assuming width of the map is 10, also assuming both og and map is square
         
@@ -191,6 +197,10 @@ class RRTC:
         return og_index
 
     def map_to_og_matrix_conversion(self,point,og_width,og_height,map_width, map_height):
+        """
+        Returns the index of the square of the occuapncy grid a given point lies on in a matrix form in column-major form,
+        so that it is easier to compare with [x,y] coordinates
+        """
         position = np.array([point.x,point.y])
         ratio = og_width/map_width#for now just assuming width of the map is 10, also assuming both og and map is square
         
@@ -200,12 +210,18 @@ class RRTC:
         return [og_column,og_row]
 
     def og_matrix_to_map_conversion(self,og_grid,og_width,og_height,map_width,map_height):
+        """
+        returns the most bottom-right point in an occuapncy grid square, given its index in column-major form
+        """
         ratio = og_width/map_width
         x = og_grid[0]/ratio
         y = og_grid[1]/ratio
         return self.Node(x,y)
 
     def point_is_on_right_parameter_of_grid_square(self,point,og_width,og_height, map_width, map_height):
+        """
+        determines if a point lies perfectly on the vertical line between two occupancy gird squares
+        """
         position = np.array([point.x,point.y])
         ratio = og_width/map_width
 
@@ -215,6 +231,9 @@ class RRTC:
             return False
 
     def point_is_on_bottom_parameter_of_grid_square(self,point,og_width,og_height,map_width,map_height):
+        """
+        determines if a point lies perfectly on the horizontal line between two occupancy gird squares
+        """
         position = np.array([point.x,point.y])
         ratio = og_width/map_width
 
@@ -225,6 +244,11 @@ class RRTC:
 
     def minor_path_is_collision_free(self,new_node,prev_node,og_height,og_width,map_width,map_height):
 
+        """
+        WORK IN PROGRESS
+        
+        determines if the straight line between two given points doesn't pass through any occupied squares
+        """
 
             #gradient has to be positive probs
         start = prev_node
