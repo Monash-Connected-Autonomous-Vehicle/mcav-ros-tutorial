@@ -1,0 +1,4 @@
+[console_scripts]
+control = sim_tut.control:main
+sense = sim_tut.sensor:main
+

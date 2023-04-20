@@ -1,0 +1,10 @@
+<launch>
+	<node pkg="sim_tut" exec="control">
+		<remap from="/simulated_vehicle/cmd_vel" to="/twist_cmd"/>
+	</node>
+	
+	<node pkg="sim_tut" exec="sense">
+		<remap from="/lidar/points" to="/velodyne_points"/>
+	</node>
+
+</launch>

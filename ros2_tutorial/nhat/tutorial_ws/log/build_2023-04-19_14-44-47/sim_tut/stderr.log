@@ -1,0 +1,4 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+Sorry: TabError: inconsistent use of tabs and spaces in indentation (sensor.py, line 33)
+Sorry: TabError: inconsistent use of tabs and spaces in indentation (control.py, line 42)

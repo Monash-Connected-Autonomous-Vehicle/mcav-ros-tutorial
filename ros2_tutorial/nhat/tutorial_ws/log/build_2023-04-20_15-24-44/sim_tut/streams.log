@@ -1,0 +1,32 @@
+[0.510s] Invoking command in '/home/will/tutorial_ws/src/sim_tut': PYTHONPATH=/home/will/tutorial_ws/build/sim_tut/prefix_override:/home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sim_tut build --build-base /home/will/tutorial_ws/build/sim_tut/build install --record /home/will/tutorial_ws/build/sim_tut/install.log --single-version-externally-managed
+[0.695s] running egg_info
+[0.695s] writing ../../build/sim_tut/sim_tut.egg-info/PKG-INFO
+[0.697s] writing dependency_links to ../../build/sim_tut/sim_tut.egg-info/dependency_links.txt
+[0.697s] writing entry points to ../../build/sim_tut/sim_tut.egg-info/entry_points.txt
+[0.697s] writing requirements to ../../build/sim_tut/sim_tut.egg-info/requires.txt
+[0.698s] writing top-level names to ../../build/sim_tut/sim_tut.egg-info/top_level.txt
+[0.701s] reading manifest file '../../build/sim_tut/sim_tut.egg-info/SOURCES.txt'
+[0.702s] writing manifest file '../../build/sim_tut/sim_tut.egg-info/SOURCES.txt'
+[0.702s] running build
+[0.702s] running build_py
+[0.703s] copying sim_tut/sensor.py -> /home/will/tutorial_ws/build/sim_tut/build/lib/sim_tut
+[0.704s] running install
+[0.704s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.704s]   warnings.warn(
+[0.704s] running install_lib
+[0.705s] copying /home/will/tutorial_ws/build/sim_tut/build/lib/sim_tut/sensor.py -> /home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages/sim_tut
+[0.706s] byte-compiling /home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages/sim_tut/sensor.py to sensor.cpython-310.pyc
+[0.706s]   File "/home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages/sim_tut/sensor.py", line 41
+[0.706s]     if point.z > 0 and abs(point.y) < 2 distance < 5.0:
+[0.706s]                                         ^^^^^^^^
+[0.706s] SyntaxError: invalid syntax
+[0.706s] 
+[0.707s] running install_data
+[0.707s] running install_egg_info
+[0.708s] removing '/home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages/sim_tut-0.0.0-py3.10.egg-info' (and everything under it)
+[0.708s] Copying ../../build/sim_tut/sim_tut.egg-info to /home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages/sim_tut-0.0.0-py3.10.egg-info
+[0.709s] running install_scripts
+[0.734s] Installing control script to /home/will/tutorial_ws/install/sim_tut/lib/sim_tut
+[0.734s] Installing sense script to /home/will/tutorial_ws/install/sim_tut/lib/sim_tut
+[0.734s] writing list of installed files to '/home/will/tutorial_ws/build/sim_tut/install.log'
+[0.766s] Invoked command in '/home/will/tutorial_ws/src/sim_tut' returned '0': PYTHONPATH=/home/will/tutorial_ws/build/sim_tut/prefix_override:/home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/sim_tut build --build-base /home/will/tutorial_ws/build/sim_tut/build install --record /home/will/tutorial_ws/build/sim_tut/install.log --single-version-externally-managed

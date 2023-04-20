@@ -1,0 +1,39 @@
+[0.782s] Invoking command in '/home/will/tutorial_ws/src/ros2-ebrake-tutorial/simulation_launch': PYTHONPATH=/home/will/tutorial_ws/build/simulation_launch/prefix_override:/home/will/tutorial_ws/install/simulation_launch/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../../build/simulation_launch build --build-base /home/will/tutorial_ws/build/simulation_launch/build install --record /home/will/tutorial_ws/build/simulation_launch/install.log --single-version-externally-managed
+[0.928s] running egg_info
+[0.928s] creating ../../../build/simulation_launch/simulation_launch.egg-info
+[0.929s] writing ../../../build/simulation_launch/simulation_launch.egg-info/PKG-INFO
+[0.929s] writing dependency_links to ../../../build/simulation_launch/simulation_launch.egg-info/dependency_links.txt
+[0.929s] writing entry points to ../../../build/simulation_launch/simulation_launch.egg-info/entry_points.txt
+[0.929s] writing requirements to ../../../build/simulation_launch/simulation_launch.egg-info/requires.txt
+[0.929s] writing top-level names to ../../../build/simulation_launch/simulation_launch.egg-info/top_level.txt
+[0.929s] writing manifest file '../../../build/simulation_launch/simulation_launch.egg-info/SOURCES.txt'
+[0.931s] reading manifest file '../../../build/simulation_launch/simulation_launch.egg-info/SOURCES.txt'
+[0.931s] writing manifest file '../../../build/simulation_launch/simulation_launch.egg-info/SOURCES.txt'
+[0.932s] running build
+[0.932s] running build_py
+[0.933s] creating /home/will/tutorial_ws/build/simulation_launch/build
+[0.933s] creating /home/will/tutorial_ws/build/simulation_launch/build/lib
+[0.933s] creating /home/will/tutorial_ws/build/simulation_launch/build/lib/simulation_launch
+[0.933s] copying simulation_launch/__init__.py -> /home/will/tutorial_ws/build/simulation_launch/build/lib/simulation_launch
+[0.933s] running install
+[0.935s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.935s]   warnings.warn(
+[0.935s] running install_lib
+[0.936s] creating /home/will/tutorial_ws/install/simulation_launch/lib/python3.10/site-packages/simulation_launch
+[0.936s] copying /home/will/tutorial_ws/build/simulation_launch/build/lib/simulation_launch/__init__.py -> /home/will/tutorial_ws/install/simulation_launch/lib/python3.10/site-packages/simulation_launch
+[0.936s] byte-compiling /home/will/tutorial_ws/install/simulation_launch/lib/python3.10/site-packages/simulation_launch/__init__.py to __init__.cpython-310.pyc
+[0.936s] running install_data
+[0.937s] creating /home/will/tutorial_ws/install/simulation_launch/share/ament_index
+[0.937s] creating /home/will/tutorial_ws/install/simulation_launch/share/ament_index/resource_index
+[0.937s] creating /home/will/tutorial_ws/install/simulation_launch/share/ament_index/resource_index/packages
+[0.937s] copying resource/simulation_launch -> /home/will/tutorial_ws/install/simulation_launch/share/ament_index/resource_index/packages
+[0.937s] copying package.xml -> /home/will/tutorial_ws/install/simulation_launch/share/simulation_launch
+[0.937s] creating /home/will/tutorial_ws/install/simulation_launch/share/simulation_launch/launch
+[0.937s] copying launch/gazebo_playground.launch.xml -> /home/will/tutorial_ws/install/simulation_launch/share/simulation_launch/launch
+[0.937s] copying config/gazebo_topics.yaml -> /home/will/tutorial_ws/install/simulation_launch/share/simulation_launch
+[0.937s] copying config/lidar_playground.sdf -> /home/will/tutorial_ws/install/simulation_launch/share/simulation_launch
+[0.938s] running install_egg_info
+[0.940s] Copying ../../../build/simulation_launch/simulation_launch.egg-info to /home/will/tutorial_ws/install/simulation_launch/lib/python3.10/site-packages/simulation_launch-0.0.0-py3.10.egg-info
+[0.941s] running install_scripts
+[0.961s] writing list of installed files to '/home/will/tutorial_ws/build/simulation_launch/install.log'
+[0.986s] Invoked command in '/home/will/tutorial_ws/src/ros2-ebrake-tutorial/simulation_launch' returned '0': PYTHONPATH=/home/will/tutorial_ws/build/simulation_launch/prefix_override:/home/will/tutorial_ws/install/simulation_launch/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../../build/simulation_launch build --build-base /home/will/tutorial_ws/build/simulation_launch/build install --record /home/will/tutorial_ws/build/simulation_launch/install.log --single-version-externally-managed

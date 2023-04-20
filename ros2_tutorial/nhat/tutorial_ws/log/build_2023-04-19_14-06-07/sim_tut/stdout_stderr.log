@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/sim_tut/sim_tut.egg-info/PKG-INFO
+writing dependency_links to ../../build/sim_tut/sim_tut.egg-info/dependency_links.txt
+writing entry points to ../../build/sim_tut/sim_tut.egg-info/entry_points.txt
+writing requirements to ../../build/sim_tut/sim_tut.egg-info/requires.txt
+writing top-level names to ../../build/sim_tut/sim_tut.egg-info/top_level.txt
+reading manifest file '../../build/sim_tut/sim_tut.egg-info/SOURCES.txt'
+writing manifest file '../../build/sim_tut/sim_tut.egg-info/SOURCES.txt'
+running build
+running build_py
+copying sim_tut/sensor.py -> /home/will/tutorial_ws/build/sim_tut/build/lib/sim_tut
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+copying /home/will/tutorial_ws/build/sim_tut/build/lib/sim_tut/sensor.py -> /home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages/sim_tut
+byte-compiling /home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages/sim_tut/sensor.py to sensor.cpython-310.pyc
+Sorry: TabError: inconsistent use of tabs and spaces in indentation (sensor.py, line 35)
+running install_data
+running install_egg_info
+removing '/home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages/sim_tut-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/sim_tut/sim_tut.egg-info to /home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages/sim_tut-0.0.0-py3.10.egg-info
+running install_scripts
+Installing control script to /home/will/tutorial_ws/install/sim_tut/lib/sim_tut
+Installing sense script to /home/will/tutorial_ws/install/sim_tut/lib/sim_tut
+writing list of installed files to '/home/will/tutorial_ws/build/sim_tut/install.log'

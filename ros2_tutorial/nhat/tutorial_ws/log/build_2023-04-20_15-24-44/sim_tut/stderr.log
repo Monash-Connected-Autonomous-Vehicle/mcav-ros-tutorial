@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+  File "/home/will/tutorial_ws/install/sim_tut/lib/python3.10/site-packages/sim_tut/sensor.py", line 41
+    if point.z > 0 and abs(point.y) < 2 distance < 5.0:
+                                        ^^^^^^^^
+SyntaxError: invalid syntax
+
